@@ -1,0 +1,5372 @@
+[
+  {
+    "id": 1,
+    "category": "runtime",
+    "instruction": "Cual es la posicion del scroll?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "{x: window.scrollX, y: window.scrollY}",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 2,
+    "category": "debugger",
+    "instruction": "Sale de la funcion actual",
+    "cdp_command": "Debugger.stepOut",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Salido de funcion"
+  },
+  {
+    "id": 3,
+    "category": "dom",
+    "instruction": "Dame el HTML del elemento #main",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#main"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 4,
+    "category": "debugger",
+    "instruction": "Pausa la ejecucion",
+    "cdp_command": "Debugger.pause",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion pausada"
+  },
+  {
+    "id": 5,
+    "category": "performance",
+    "instruction": "Activa el profiler de CPU",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 6,
+    "category": "runtime",
+    "instruction": "Cual es la posicion del scroll?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "{x: window.scrollX, y: window.scrollY}",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 7,
+    "category": "runtime",
+    "instruction": "Cuantos listeners hay en el documento?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "getEventListeners(document).length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 8,
+    "category": "console",
+    "instruction": "Activa el monitoreo de consola",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 9,
+    "category": "debugger",
+    "instruction": "Pausa la ejecucion",
+    "cdp_command": "Debugger.pause",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion pausada"
+  },
+  {
+    "id": 10,
+    "category": "dom",
+    "instruction": "Cual es el tamano del elemento #container?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#container"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 11,
+    "category": "runtime",
+    "instruction": "Cual es el titulo de la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.title",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 12,
+    "category": "runtime",
+    "instruction": "Que cookies hay en este sitio?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 13,
+    "category": "debugger",
+    "instruction": "Entra en la siguiente funcion",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 14,
+    "category": "dom",
+    "instruction": "Anade disabled al boton submit",
+    "cdp_command": "DOM.setAttributeValue",
+    "cdp_params": {
+      "nodeId": 449,
+      "name": "disabled",
+      "value": "test"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Atributo modificado"
+  },
+  {
+    "id": 15,
+    "category": "navigation",
+    "instruction": "Trae la pestana al frente",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 16,
+    "category": "runtime",
+    "instruction": "Cuantos listeners hay en el documento?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "getEventListeners(document).length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 17,
+    "category": "dom",
+    "instruction": "Cual es el tamano del elemento #container?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#container"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 18,
+    "category": "runtime",
+    "instruction": "Cual es el titulo de la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.title",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 19,
+    "category": "dom",
+    "instruction": "Que atributos tiene el elemento body?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "body"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 20,
+    "category": "runtime",
+    "instruction": "Dame la URL actual",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "window.location.href",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 21,
+    "category": "runtime",
+    "instruction": "Dame la URL actual",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "window.location.href",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 22,
+    "category": "runtime",
+    "instruction": "Ejecuta document.title",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.title",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 23,
+    "category": "runtime",
+    "instruction": "Escribe 'test' en el campo username",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').value = '{{text}}'",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 24,
+    "category": "runtime",
+    "instruction": "Cual es el user agent?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "navigator.userAgent",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 25,
+    "category": "navigation",
+    "instruction": "Trae la pestana al frente",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 26,
+    "category": "runtime",
+    "instruction": "Dame la URL actual",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "window.location.href",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 27,
+    "category": "navigation",
+    "instruction": "Abre una nueva pestana con github.com",
+    "cdp_command": "Target.createTarget",
+    "cdp_params": {
+      "url": "https://youtube.com"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Nueva pestana creada"
+  },
+  {
+    "id": 28,
+    "category": "navigation",
+    "instruction": "Navega a google.com",
+    "cdp_command": "Page.navigate",
+    "cdp_params": {
+      "url": "https://perplexity.ai"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina cargada"
+  },
+  {
+    "id": 29,
+    "category": "dom",
+    "instruction": "Encuentra el elemento button",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "button"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 30,
+    "category": "runtime",
+    "instruction": "Hay elementos con aria-label?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('[aria-label]').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 31,
+    "category": "memory",
+    "instruction": "Toma un snapshot del heap",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 32,
+    "category": "runtime",
+    "instruction": "Ejecuta document.title",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.title",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 33,
+    "category": "console",
+    "instruction": "Cuantos errores hay?",
+    "cdp_command": "DOM.querySelectorAll",
+    "cdp_params": {
+      "selector": "a"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Elementos encontrados"
+  },
+  {
+    "id": 34,
+    "category": "console",
+    "instruction": "Cuantos errores hay?",
+    "cdp_command": "DOM.querySelectorAll",
+    "cdp_params": {
+      "selector": "a"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Elementos encontrados"
+  },
+  {
+    "id": 35,
+    "category": "console",
+    "instruction": "Hay errores en consola?",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 36,
+    "category": "navigation",
+    "instruction": "Navega a google.com",
+    "cdp_command": "Page.navigate",
+    "cdp_params": {
+      "url": "https://perplexity.ai"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina cargada"
+  },
+  {
+    "id": 37,
+    "category": "debugger",
+    "instruction": "Pausa la ejecucion",
+    "cdp_command": "Debugger.pause",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion pausada"
+  },
+  {
+    "id": 38,
+    "category": "dom",
+    "instruction": "Que atributos tiene el elemento body?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "body"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 39,
+    "category": "memory",
+    "instruction": "Fuerza garbage collection",
+    "cdp_command": "HeapProfiler.collectGarbage",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "GC ejecutado"
+  },
+  {
+    "id": 40,
+    "category": "debugger",
+    "instruction": "Activa el debugger",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 41,
+    "category": "memory",
+    "instruction": "Fuerza garbage collection",
+    "cdp_command": "HeapProfiler.collectGarbage",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "GC ejecutado"
+  },
+  {
+    "id": 42,
+    "category": "runtime",
+    "instruction": "Cuantas imagenes tiene la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('img').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 43,
+    "category": "runtime",
+    "instruction": "Que version de React usa esta app?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "Object.keys(window).filter(k => k.includes('react') || k.includes('vue')).join(', ')",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 44,
+    "category": "memory",
+    "instruction": "Cuanta memoria usa JavaScript?",
+    "cdp_command": "Memory.getDOMCounters",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Contadores de memoria"
+  },
+  {
+    "id": 45,
+    "category": "network",
+    "instruction": "Lista todos los requests",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 46,
+    "category": "debugger",
+    "instruction": "Continua la ejecucion",
+    "cdp_command": "Debugger.resume",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion reanudada"
+  },
+  {
+    "id": 47,
+    "category": "network",
+    "instruction": "Intercepta las peticiones a /api/*",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 48,
+    "category": "debugger",
+    "instruction": "Sale de la funcion actual",
+    "cdp_command": "Debugger.stepOut",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Salido de funcion"
+  },
+  {
+    "id": 49,
+    "category": "performance",
+    "instruction": "Comienza el profiling",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 50,
+    "category": "dom",
+    "instruction": "Encuentra el elemento button",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "button"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 51,
+    "category": "debugger",
+    "instruction": "Sale de la funcion actual",
+    "cdp_command": "Debugger.stepOut",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Salido de funcion"
+  },
+  {
+    "id": 52,
+    "category": "console",
+    "instruction": "Hay errores en consola?",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 53,
+    "category": "network",
+    "instruction": "Intercepta las peticiones a /api/*",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 54,
+    "category": "runtime",
+    "instruction": "Hay elementos con aria-label?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('[aria-label]').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 55,
+    "category": "runtime",
+    "instruction": "Cual es el user agent?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "navigator.userAgent",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 56,
+    "category": "memory",
+    "instruction": "Cuanta memoria usa JavaScript?",
+    "cdp_command": "Memory.getDOMCounters",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Contadores de memoria"
+  },
+  {
+    "id": 57,
+    "category": "runtime",
+    "instruction": "Que version de React usa esta app?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "Object.keys(window).filter(k => k.includes('react') || k.includes('vue')).join(', ')",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 58,
+    "category": "runtime",
+    "instruction": "Lista las claves de localStorage",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "JSON.stringify(localStorage)",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 59,
+    "category": "navigation",
+    "instruction": "Trae la pestana al frente",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 60,
+    "category": "dom",
+    "instruction": "Cuantos elementos div hay?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "div"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 61,
+    "category": "performance",
+    "instruction": "Activa el profiler de CPU",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 62,
+    "category": "network",
+    "instruction": "Lista todos los requests",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 63,
+    "category": "navigation",
+    "instruction": "Cierra la pestana actual",
+    "cdp_command": "Target.closeTarget",
+    "cdp_params": {
+      "targetId": "{{TARGET_ID}}"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pestana cerrada"
+  },
+  {
+    "id": 64,
+    "category": "debugger",
+    "instruction": "Pausa la ejecucion",
+    "cdp_command": "Debugger.pause",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion pausada"
+  },
+  {
+    "id": 65,
+    "category": "dom",
+    "instruction": "Cuantos elementos div hay?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "div"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 66,
+    "category": "runtime",
+    "instruction": "Que cookies hay en este sitio?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 67,
+    "category": "navigation",
+    "instruction": "Abre una nueva pestana con github.com",
+    "cdp_command": "Target.createTarget",
+    "cdp_params": {
+      "url": "https://google.com"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Nueva pestana creada"
+  },
+  {
+    "id": 68,
+    "category": "runtime",
+    "instruction": "Hay elementos con aria-label?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('[aria-label]').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 69,
+    "category": "runtime",
+    "instruction": "Que version de React usa esta app?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "Object.keys(window).filter(k => k.includes('react') || k.includes('vue')).join(', ')",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 70,
+    "category": "memory",
+    "instruction": "Hay memory leaks?",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 71,
+    "category": "dom",
+    "instruction": "Que atributos tiene el elemento body?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "body"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 72,
+    "category": "dom",
+    "instruction": "Que atributos tiene el elemento body?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "body"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 73,
+    "category": "runtime",
+    "instruction": "Cuantas imagenes tiene la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('img').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 74,
+    "category": "navigation",
+    "instruction": "Abre una nueva pestana con github.com",
+    "cdp_command": "Target.createTarget",
+    "cdp_params": {
+      "url": "https://github.com"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Nueva pestana creada"
+  },
+  {
+    "id": 75,
+    "category": "performance",
+    "instruction": "Comienza el profiling",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 76,
+    "category": "performance",
+    "instruction": "Comienza el profiling",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 77,
+    "category": "console",
+    "instruction": "Cuantos errores hay?",
+    "cdp_command": "DOM.querySelectorAll",
+    "cdp_params": {
+      "selector": "a"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Elementos encontrados"
+  },
+  {
+    "id": 78,
+    "category": "runtime",
+    "instruction": "Hay elementos con aria-label?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('[aria-label]').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 79,
+    "category": "debugger",
+    "instruction": "Entra en la siguiente funcion",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 80,
+    "category": "performance",
+    "instruction": "Deten el profiling",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 81,
+    "category": "network",
+    "instruction": "Lista todos los requests",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 82,
+    "category": "navigation",
+    "instruction": "Cambia el tamano a 1920x1080",
+    "cdp_command": "Emulation.setDeviceMetricsOverride",
+    "cdp_params": {
+      "width": 1920,
+      "height": 1080
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Viewport modificado"
+  },
+  {
+    "id": 83,
+    "category": "memory",
+    "instruction": "Cuanta memoria usa JavaScript?",
+    "cdp_command": "Memory.getDOMCounters",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Contadores de memoria"
+  },
+  {
+    "id": 84,
+    "category": "network",
+    "instruction": "Activa el monitoreo de red",
+    "cdp_command": "Network.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Red habilitada"
+  },
+  {
+    "id": 85,
+    "category": "runtime",
+    "instruction": "Esta la pagina completamente cargada?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.readyState",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 86,
+    "category": "memory",
+    "instruction": "Toma un snapshot del heap",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 87,
+    "category": "runtime",
+    "instruction": "Lista las claves de localStorage",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "JSON.stringify(localStorage)",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 88,
+    "category": "runtime",
+    "instruction": "Que version de React usa esta app?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "Object.keys(window).filter(k => k.includes('react') || k.includes('vue')).join(', ')",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 89,
+    "category": "dom",
+    "instruction": "Cuantos elementos div hay?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "div"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 90,
+    "category": "navigation",
+    "instruction": "Ve a perplexity.ai",
+    "cdp_command": "Page.navigate",
+    "cdp_params": {
+      "url": "https://perplexity.ai"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina cargada"
+  },
+  {
+    "id": 91,
+    "category": "navigation",
+    "instruction": "Abre una nueva pestana con github.com",
+    "cdp_command": "Target.createTarget",
+    "cdp_params": {
+      "url": "https://google.com"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Nueva pestana creada"
+  },
+  {
+    "id": 92,
+    "category": "runtime",
+    "instruction": "Dame la URL actual",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "window.location.href",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 93,
+    "category": "runtime",
+    "instruction": "Cuantas imagenes tiene la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('img').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 94,
+    "category": "performance",
+    "instruction": "Que metricas de performance hay?",
+    "cdp_command": "Performance.getMetrics",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Metricas obtenidas"
+  },
+  {
+    "id": 95,
+    "category": "performance",
+    "instruction": "Activa el profiler de CPU",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 96,
+    "category": "debugger",
+    "instruction": "Continua la ejecucion",
+    "cdp_command": "Debugger.resume",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion reanudada"
+  },
+  {
+    "id": 97,
+    "category": "memory",
+    "instruction": "Hay memory leaks?",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 98,
+    "category": "dom",
+    "instruction": "Cual es el tamano del elemento #container?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#container"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 99,
+    "category": "console",
+    "instruction": "Activa el monitoreo de consola",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 100,
+    "category": "dom",
+    "instruction": "Que atributos tiene el elemento body?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "body"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 101,
+    "category": "runtime",
+    "instruction": "Cual es el user agent?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "navigator.userAgent",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 102,
+    "category": "debugger",
+    "instruction": "Entra en la siguiente funcion",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 103,
+    "category": "runtime",
+    "instruction": "Cual es la posicion del scroll?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "{x: window.scrollX, y: window.scrollY}",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 104,
+    "category": "runtime",
+    "instruction": "Escribe 'test' en el campo username",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').value = '{{text}}'",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 105,
+    "category": "performance",
+    "instruction": "Activa el profiler de CPU",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 106,
+    "category": "runtime",
+    "instruction": "Cual es el user agent?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "navigator.userAgent",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 107,
+    "category": "runtime",
+    "instruction": "Esta la pagina completamente cargada?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.readyState",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 108,
+    "category": "debugger",
+    "instruction": "Continua la ejecucion",
+    "cdp_command": "Debugger.resume",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion reanudada"
+  },
+  {
+    "id": 109,
+    "category": "performance",
+    "instruction": "Deten el profiling",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 110,
+    "category": "dom",
+    "instruction": "Que atributos tiene el elemento body?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "body"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 111,
+    "category": "dom",
+    "instruction": "Encuentra el elemento button",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "button"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 112,
+    "category": "navigation",
+    "instruction": "Recarga la pagina sin usar cache",
+    "cdp_command": "Page.reload",
+    "cdp_params": {
+      "ignoreCache": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina recargada"
+  },
+  {
+    "id": 113,
+    "category": "navigation",
+    "instruction": "Trae la pestana al frente",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 114,
+    "category": "runtime",
+    "instruction": "Que version de React usa esta app?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "Object.keys(window).filter(k => k.includes('react') || k.includes('vue')).join(', ')",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 115,
+    "category": "dom",
+    "instruction": "Anade disabled al boton submit",
+    "cdp_command": "DOM.setAttributeValue",
+    "cdp_params": {
+      "nodeId": 735,
+      "name": "disabled",
+      "value": "enabled"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Atributo modificado"
+  },
+  {
+    "id": 116,
+    "category": "dom",
+    "instruction": "Cual es el tamano del elemento #container?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#container"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 117,
+    "category": "debugger",
+    "instruction": "Continua la ejecucion",
+    "cdp_command": "Debugger.resume",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion reanudada"
+  },
+  {
+    "id": 118,
+    "category": "runtime",
+    "instruction": "Cual es el user agent?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "navigator.userAgent",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 119,
+    "category": "navigation",
+    "instruction": "Recarga la pagina sin usar cache",
+    "cdp_command": "Page.reload",
+    "cdp_params": {
+      "ignoreCache": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina recargada"
+  },
+  {
+    "id": 120,
+    "category": "debugger",
+    "instruction": "Pon un breakpoint en app.js linea 42",
+    "cdp_command": "Debugger.setBreakpointByUrl",
+    "cdp_params": {
+      "url": "app.js",
+      "lineNumber": 130
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Breakpoint establecido"
+  },
+  {
+    "id": 121,
+    "category": "network",
+    "instruction": "Intercepta las peticiones a /api/*",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 122,
+    "category": "debugger",
+    "instruction": "Avanza un paso",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 123,
+    "category": "network",
+    "instruction": "Activa el monitoreo de red",
+    "cdp_command": "Network.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Red habilitada"
+  },
+  {
+    "id": 124,
+    "category": "debugger",
+    "instruction": "Avanza un paso",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 125,
+    "category": "runtime",
+    "instruction": "Cuantas imagenes tiene la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('img').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 126,
+    "category": "dom",
+    "instruction": "Anade disabled al boton submit",
+    "cdp_command": "DOM.setAttributeValue",
+    "cdp_params": {
+      "nodeId": 719,
+      "name": "disabled",
+      "value": "true"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Atributo modificado"
+  },
+  {
+    "id": 127,
+    "category": "runtime",
+    "instruction": "Esta la pagina completamente cargada?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.readyState",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 128,
+    "category": "performance",
+    "instruction": "Comienza el profiling",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 129,
+    "category": "runtime",
+    "instruction": "Cuantas imagenes tiene la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('img').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 130,
+    "category": "memory",
+    "instruction": "Fuerza garbage collection",
+    "cdp_command": "HeapProfiler.collectGarbage",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "GC ejecutado"
+  },
+  {
+    "id": 131,
+    "category": "navigation",
+    "instruction": "Trae la pestana al frente",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 132,
+    "category": "runtime",
+    "instruction": "Cuantos listeners hay en el documento?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "getEventListeners(document).length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 133,
+    "category": "memory",
+    "instruction": "Toma un snapshot del heap",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 134,
+    "category": "runtime",
+    "instruction": "Que cookies hay en este sitio?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 135,
+    "category": "navigation",
+    "instruction": "Abre una nueva pestana con github.com",
+    "cdp_command": "Target.createTarget",
+    "cdp_params": {
+      "url": "https://github.com"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Nueva pestana creada"
+  },
+  {
+    "id": 136,
+    "category": "memory",
+    "instruction": "Cuanta memoria usa JavaScript?",
+    "cdp_command": "Memory.getDOMCounters",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Contadores de memoria"
+  },
+  {
+    "id": 137,
+    "category": "navigation",
+    "instruction": "Abre una nueva pestana con github.com",
+    "cdp_command": "Target.createTarget",
+    "cdp_params": {
+      "url": "https://google.com"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Nueva pestana creada"
+  },
+  {
+    "id": 138,
+    "category": "network",
+    "instruction": "Lista todos los requests",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 139,
+    "category": "network",
+    "instruction": "Intercepta las peticiones a /api/*",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 140,
+    "category": "debugger",
+    "instruction": "Entra en la siguiente funcion",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 141,
+    "category": "network",
+    "instruction": "Activa el monitoreo de red",
+    "cdp_command": "Network.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Red habilitada"
+  },
+  {
+    "id": 142,
+    "category": "performance",
+    "instruction": "Comienza el profiling",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 143,
+    "category": "performance",
+    "instruction": "Comienza el profiling",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 144,
+    "category": "runtime",
+    "instruction": "Simula un click en el menu",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').click()",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 145,
+    "category": "runtime",
+    "instruction": "Lista las claves de localStorage",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "JSON.stringify(localStorage)",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 146,
+    "category": "runtime",
+    "instruction": "Hay elementos con aria-label?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('[aria-label]').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 147,
+    "category": "performance",
+    "instruction": "Que metricas de performance hay?",
+    "cdp_command": "Performance.getMetrics",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Metricas obtenidas"
+  },
+  {
+    "id": 148,
+    "category": "console",
+    "instruction": "Activa el monitoreo de consola",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 149,
+    "category": "navigation",
+    "instruction": "Cambia el tamano a 1920x1080",
+    "cdp_command": "Emulation.setDeviceMetricsOverride",
+    "cdp_params": {
+      "width": 1920,
+      "height": 1080
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Viewport modificado"
+  },
+  {
+    "id": 150,
+    "category": "navigation",
+    "instruction": "Navega a google.com",
+    "cdp_command": "Page.navigate",
+    "cdp_params": {
+      "url": "https://twitter.com"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina cargada"
+  },
+  {
+    "id": 151,
+    "category": "navigation",
+    "instruction": "Abre una nueva pestana con github.com",
+    "cdp_command": "Target.createTarget",
+    "cdp_params": {
+      "url": "https://twitter.com"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Nueva pestana creada"
+  },
+  {
+    "id": 152,
+    "category": "console",
+    "instruction": "Cuantos errores hay?",
+    "cdp_command": "DOM.querySelectorAll",
+    "cdp_params": {
+      "selector": "a"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Elementos encontrados"
+  },
+  {
+    "id": 153,
+    "category": "console",
+    "instruction": "Cuantos errores hay?",
+    "cdp_command": "DOM.querySelectorAll",
+    "cdp_params": {
+      "selector": "a"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Elementos encontrados"
+  },
+  {
+    "id": 154,
+    "category": "debugger",
+    "instruction": "Activa el debugger",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 155,
+    "category": "runtime",
+    "instruction": "Escribe 'test' en el campo username",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').value = '{{text}}'",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 156,
+    "category": "runtime",
+    "instruction": "Cual es la posicion del scroll?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "{x: window.scrollX, y: window.scrollY}",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 157,
+    "category": "console",
+    "instruction": "Activa el monitoreo de consola",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 158,
+    "category": "dom",
+    "instruction": "Dame el HTML del elemento #main",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#main"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 159,
+    "category": "network",
+    "instruction": "Lista todos los requests",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 160,
+    "category": "debugger",
+    "instruction": "Activa el debugger",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 161,
+    "category": "navigation",
+    "instruction": "Cambia el tamano a 1920x1080",
+    "cdp_command": "Emulation.setDeviceMetricsOverride",
+    "cdp_params": {
+      "width": 1920,
+      "height": 1080
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Viewport modificado"
+  },
+  {
+    "id": 162,
+    "category": "navigation",
+    "instruction": "Ve a perplexity.ai",
+    "cdp_command": "Page.navigate",
+    "cdp_params": {
+      "url": "https://youtube.com"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina cargada"
+  },
+  {
+    "id": 163,
+    "category": "dom",
+    "instruction": "Cual es el tamano del elemento #container?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#container"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 164,
+    "category": "console",
+    "instruction": "Hay errores en consola?",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 165,
+    "category": "dom",
+    "instruction": "Dame el HTML del elemento #main",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#main"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 166,
+    "category": "debugger",
+    "instruction": "Activa el debugger",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 167,
+    "category": "network",
+    "instruction": "Limpia las cookies",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 168,
+    "category": "console",
+    "instruction": "Verifica si hay errores de JavaScript",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "window.__errors?.length || 0",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 169,
+    "category": "debugger",
+    "instruction": "Sale de la funcion actual",
+    "cdp_command": "Debugger.stepOut",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Salido de funcion"
+  },
+  {
+    "id": 170,
+    "category": "dom",
+    "instruction": "Anade disabled al boton submit",
+    "cdp_command": "DOM.setAttributeValue",
+    "cdp_params": {
+      "nodeId": 792,
+      "name": "disabled",
+      "value": "true"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Atributo modificado"
+  },
+  {
+    "id": 171,
+    "category": "runtime",
+    "instruction": "Escribe 'test' en el campo username",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').value = '{{text}}'",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 172,
+    "category": "runtime",
+    "instruction": "Cual es la posicion del scroll?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "{x: window.scrollX, y: window.scrollY}",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 173,
+    "category": "performance",
+    "instruction": "Activa el profiler de CPU",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 174,
+    "category": "debugger",
+    "instruction": "Pausa la ejecucion",
+    "cdp_command": "Debugger.pause",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion pausada"
+  },
+  {
+    "id": 175,
+    "category": "debugger",
+    "instruction": "Pausa la ejecucion",
+    "cdp_command": "Debugger.pause",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion pausada"
+  },
+  {
+    "id": 176,
+    "category": "network",
+    "instruction": "Intercepta las peticiones a /api/*",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 177,
+    "category": "runtime",
+    "instruction": "Que cookies hay en este sitio?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 178,
+    "category": "network",
+    "instruction": "Activa el monitoreo de red",
+    "cdp_command": "Network.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Red habilitada"
+  },
+  {
+    "id": 179,
+    "category": "runtime",
+    "instruction": "Simula un click en el menu",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').click()",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 180,
+    "category": "runtime",
+    "instruction": "Cual es el user agent?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "navigator.userAgent",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 181,
+    "category": "debugger",
+    "instruction": "Pon un breakpoint en app.js linea 42",
+    "cdp_command": "Debugger.setBreakpointByUrl",
+    "cdp_params": {
+      "url": "app.js",
+      "lineNumber": 150
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Breakpoint establecido"
+  },
+  {
+    "id": 182,
+    "category": "runtime",
+    "instruction": "Esta la pagina completamente cargada?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.readyState",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 183,
+    "category": "network",
+    "instruction": "Intercepta las peticiones a /api/*",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 184,
+    "category": "navigation",
+    "instruction": "Cierra la pestana actual",
+    "cdp_command": "Target.closeTarget",
+    "cdp_params": {
+      "targetId": "{{TARGET_ID}}"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pestana cerrada"
+  },
+  {
+    "id": 185,
+    "category": "memory",
+    "instruction": "Fuerza garbage collection",
+    "cdp_command": "HeapProfiler.collectGarbage",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "GC ejecutado"
+  },
+  {
+    "id": 186,
+    "category": "runtime",
+    "instruction": "Que version de React usa esta app?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "Object.keys(window).filter(k => k.includes('react') || k.includes('vue')).join(', ')",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 187,
+    "category": "debugger",
+    "instruction": "Entra en la siguiente funcion",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 188,
+    "category": "memory",
+    "instruction": "Hay memory leaks?",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 189,
+    "category": "runtime",
+    "instruction": "Esta la pagina completamente cargada?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.readyState",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 190,
+    "category": "dom",
+    "instruction": "Cuantos elementos div hay?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "div"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 191,
+    "category": "debugger",
+    "instruction": "Pon un breakpoint en app.js linea 42",
+    "cdp_command": "Debugger.setBreakpointByUrl",
+    "cdp_params": {
+      "url": "app.js",
+      "lineNumber": 102
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Breakpoint establecido"
+  },
+  {
+    "id": 192,
+    "category": "navigation",
+    "instruction": "Recarga la pagina sin usar cache",
+    "cdp_command": "Page.reload",
+    "cdp_params": {
+      "ignoreCache": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina recargada"
+  },
+  {
+    "id": 193,
+    "category": "dom",
+    "instruction": "Encuentra el elemento button",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "button"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 194,
+    "category": "dom",
+    "instruction": "Anade disabled al boton submit",
+    "cdp_command": "DOM.setAttributeValue",
+    "cdp_params": {
+      "nodeId": 817,
+      "name": "disabled",
+      "value": "true"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Atributo modificado"
+  },
+  {
+    "id": 195,
+    "category": "console",
+    "instruction": "Activa el monitoreo de consola",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 196,
+    "category": "network",
+    "instruction": "Limpia las cookies",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 197,
+    "category": "memory",
+    "instruction": "Fuerza garbage collection",
+    "cdp_command": "HeapProfiler.collectGarbage",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "GC ejecutado"
+  },
+  {
+    "id": 198,
+    "category": "network",
+    "instruction": "Limpia las cookies",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 199,
+    "category": "network",
+    "instruction": "Intercepta las peticiones a /api/*",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 200,
+    "category": "runtime",
+    "instruction": "Cuantos listeners hay en el documento?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "getEventListeners(document).length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 201,
+    "category": "network",
+    "instruction": "Activa el monitoreo de red",
+    "cdp_command": "Network.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Red habilitada"
+  },
+  {
+    "id": 202,
+    "category": "runtime",
+    "instruction": "Cuantas imagenes tiene la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('img').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 203,
+    "category": "dom",
+    "instruction": "Anade disabled al boton submit",
+    "cdp_command": "DOM.setAttributeValue",
+    "cdp_params": {
+      "nodeId": 662,
+      "name": "disabled",
+      "value": "enabled"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Atributo modificado"
+  },
+  {
+    "id": 204,
+    "category": "navigation",
+    "instruction": "Trae la pestana al frente",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 205,
+    "category": "console",
+    "instruction": "Cuantos errores hay?",
+    "cdp_command": "DOM.querySelectorAll",
+    "cdp_params": {
+      "selector": "a"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Elementos encontrados"
+  },
+  {
+    "id": 206,
+    "category": "console",
+    "instruction": "Activa el monitoreo de consola",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 207,
+    "category": "runtime",
+    "instruction": "Cual es la posicion del scroll?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "{x: window.scrollX, y: window.scrollY}",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 208,
+    "category": "dom",
+    "instruction": "Que atributos tiene el elemento body?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "body"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 209,
+    "category": "network",
+    "instruction": "Limpia las cookies",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 210,
+    "category": "runtime",
+    "instruction": "Cuantos listeners hay en el documento?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "getEventListeners(document).length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 211,
+    "category": "dom",
+    "instruction": "Dame el HTML del elemento #main",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#main"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 212,
+    "category": "debugger",
+    "instruction": "Continua la ejecucion",
+    "cdp_command": "Debugger.resume",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion reanudada"
+  },
+  {
+    "id": 213,
+    "category": "dom",
+    "instruction": "Cuantos elementos div hay?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "div"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 214,
+    "category": "debugger",
+    "instruction": "Avanza un paso",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 215,
+    "category": "console",
+    "instruction": "Verifica si hay errores de JavaScript",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "window.__errors?.length || 0",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 216,
+    "category": "memory",
+    "instruction": "Toma un snapshot del heap",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 217,
+    "category": "memory",
+    "instruction": "Hay memory leaks?",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 218,
+    "category": "memory",
+    "instruction": "Hay memory leaks?",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 219,
+    "category": "runtime",
+    "instruction": "Esta la pagina completamente cargada?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.readyState",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 220,
+    "category": "debugger",
+    "instruction": "Pon un breakpoint en app.js linea 42",
+    "cdp_command": "Debugger.setBreakpointByUrl",
+    "cdp_params": {
+      "url": "app.js",
+      "lineNumber": 82
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Breakpoint establecido"
+  },
+  {
+    "id": 221,
+    "category": "debugger",
+    "instruction": "Pausa la ejecucion",
+    "cdp_command": "Debugger.pause",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion pausada"
+  },
+  {
+    "id": 222,
+    "category": "dom",
+    "instruction": "Cual es el tamano del elemento #container?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#container"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 223,
+    "category": "runtime",
+    "instruction": "Esta la pagina completamente cargada?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.readyState",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 224,
+    "category": "runtime",
+    "instruction": "Que version de React usa esta app?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "Object.keys(window).filter(k => k.includes('react') || k.includes('vue')).join(', ')",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 225,
+    "category": "navigation",
+    "instruction": "Abre una nueva pestana con github.com",
+    "cdp_command": "Target.createTarget",
+    "cdp_params": {
+      "url": "https://youtube.com"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Nueva pestana creada"
+  },
+  {
+    "id": 226,
+    "category": "debugger",
+    "instruction": "Activa el debugger",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 227,
+    "category": "runtime",
+    "instruction": "Ejecuta document.title",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.title",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 228,
+    "category": "dom",
+    "instruction": "Cual es el tamano del elemento #container?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#container"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 229,
+    "category": "runtime",
+    "instruction": "Dame la URL actual",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "window.location.href",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 230,
+    "category": "network",
+    "instruction": "Activa el monitoreo de red",
+    "cdp_command": "Network.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Red habilitada"
+  },
+  {
+    "id": 231,
+    "category": "debugger",
+    "instruction": "Pon un breakpoint en app.js linea 42",
+    "cdp_command": "Debugger.setBreakpointByUrl",
+    "cdp_params": {
+      "url": "app.js",
+      "lineNumber": 101
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Breakpoint establecido"
+  },
+  {
+    "id": 232,
+    "category": "network",
+    "instruction": "Limpia el cache",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "Limpia el cache",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 233,
+    "category": "navigation",
+    "instruction": "Abre una nueva pestana con github.com",
+    "cdp_command": "Target.createTarget",
+    "cdp_params": {
+      "url": "https://github.com"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Nueva pestana creada"
+  },
+  {
+    "id": 234,
+    "category": "network",
+    "instruction": "Intercepta las peticiones a /api/*",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 235,
+    "category": "performance",
+    "instruction": "Que metricas de performance hay?",
+    "cdp_command": "Performance.getMetrics",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Metricas obtenidas"
+  },
+  {
+    "id": 236,
+    "category": "memory",
+    "instruction": "Hay memory leaks?",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 237,
+    "category": "runtime",
+    "instruction": "Cual es la posicion del scroll?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "{x: window.scrollX, y: window.scrollY}",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 238,
+    "category": "runtime",
+    "instruction": "Ejecuta document.title",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.title",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 239,
+    "category": "runtime",
+    "instruction": "Hay elementos con aria-label?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('[aria-label]').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 240,
+    "category": "memory",
+    "instruction": "Toma un snapshot del heap",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 241,
+    "category": "runtime",
+    "instruction": "Cuantos listeners hay en el documento?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "getEventListeners(document).length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 242,
+    "category": "runtime",
+    "instruction": "Cuantas imagenes tiene la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('img').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 243,
+    "category": "debugger",
+    "instruction": "Pausa la ejecucion",
+    "cdp_command": "Debugger.pause",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion pausada"
+  },
+  {
+    "id": 244,
+    "category": "runtime",
+    "instruction": "Ejecuta document.title",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.title",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 245,
+    "category": "runtime",
+    "instruction": "Simula un click en el menu",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').click()",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 246,
+    "category": "debugger",
+    "instruction": "Avanza un paso",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 247,
+    "category": "network",
+    "instruction": "Limpia las cookies",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 248,
+    "category": "navigation",
+    "instruction": "Cambia el tamano a 1920x1080",
+    "cdp_command": "Emulation.setDeviceMetricsOverride",
+    "cdp_params": {
+      "width": 1920,
+      "height": 1080
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Viewport modificado"
+  },
+  {
+    "id": 249,
+    "category": "runtime",
+    "instruction": "Que version de React usa esta app?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "Object.keys(window).filter(k => k.includes('react') || k.includes('vue')).join(', ')",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 250,
+    "category": "debugger",
+    "instruction": "Pon un breakpoint en app.js linea 42",
+    "cdp_command": "Debugger.setBreakpointByUrl",
+    "cdp_params": {
+      "url": "app.js",
+      "lineNumber": 156
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Breakpoint establecido"
+  },
+  {
+    "id": 251,
+    "category": "runtime",
+    "instruction": "Cuantas imagenes tiene la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('img').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 252,
+    "category": "console",
+    "instruction": "Hay errores en consola?",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 253,
+    "category": "navigation",
+    "instruction": "Cierra la pestana actual",
+    "cdp_command": "Target.closeTarget",
+    "cdp_params": {
+      "targetId": "{{TARGET_ID}}"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pestana cerrada"
+  },
+  {
+    "id": 254,
+    "category": "runtime",
+    "instruction": "Simula un click en el menu",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').click()",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 255,
+    "category": "debugger",
+    "instruction": "Activa el debugger",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 256,
+    "category": "runtime",
+    "instruction": "Cuantos listeners hay en el documento?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "getEventListeners(document).length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 257,
+    "category": "navigation",
+    "instruction": "Cambia el tamano a 1920x1080",
+    "cdp_command": "Emulation.setDeviceMetricsOverride",
+    "cdp_params": {
+      "width": 1920,
+      "height": 1080
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Viewport modificado"
+  },
+  {
+    "id": 258,
+    "category": "performance",
+    "instruction": "Comienza el profiling",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 259,
+    "category": "debugger",
+    "instruction": "Sale de la funcion actual",
+    "cdp_command": "Debugger.stepOut",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Salido de funcion"
+  },
+  {
+    "id": 260,
+    "category": "dom",
+    "instruction": "Encuentra el elemento button",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "button"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 261,
+    "category": "navigation",
+    "instruction": "Abre una nueva pestana con github.com",
+    "cdp_command": "Target.createTarget",
+    "cdp_params": {
+      "url": "https://twitter.com"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Nueva pestana creada"
+  },
+  {
+    "id": 262,
+    "category": "console",
+    "instruction": "Verifica si hay errores de JavaScript",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "window.__errors?.length || 0",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 263,
+    "category": "debugger",
+    "instruction": "Entra en la siguiente funcion",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 264,
+    "category": "navigation",
+    "instruction": "Trae la pestana al frente",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 265,
+    "category": "network",
+    "instruction": "Intercepta las peticiones a /api/*",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 266,
+    "category": "debugger",
+    "instruction": "Continua la ejecucion",
+    "cdp_command": "Debugger.resume",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion reanudada"
+  },
+  {
+    "id": 267,
+    "category": "runtime",
+    "instruction": "Simula un click en el menu",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').click()",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 268,
+    "category": "runtime",
+    "instruction": "Cuantas imagenes tiene la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('img').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 269,
+    "category": "debugger",
+    "instruction": "Entra en la siguiente funcion",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 270,
+    "category": "memory",
+    "instruction": "Hay memory leaks?",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 271,
+    "category": "memory",
+    "instruction": "Toma un snapshot del heap",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 272,
+    "category": "dom",
+    "instruction": "Encuentra el elemento button",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "button"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 273,
+    "category": "navigation",
+    "instruction": "Recarga la pagina sin usar cache",
+    "cdp_command": "Page.reload",
+    "cdp_params": {
+      "ignoreCache": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina recargada"
+  },
+  {
+    "id": 274,
+    "category": "debugger",
+    "instruction": "Pon un breakpoint en app.js linea 42",
+    "cdp_command": "Debugger.setBreakpointByUrl",
+    "cdp_params": {
+      "url": "app.js",
+      "lineNumber": 160
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Breakpoint establecido"
+  },
+  {
+    "id": 275,
+    "category": "dom",
+    "instruction": "Dame el HTML del elemento #main",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#main"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 276,
+    "category": "debugger",
+    "instruction": "Avanza un paso",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 277,
+    "category": "memory",
+    "instruction": "Toma un snapshot del heap",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 278,
+    "category": "navigation",
+    "instruction": "Cambia el tamano a 1920x1080",
+    "cdp_command": "Emulation.setDeviceMetricsOverride",
+    "cdp_params": {
+      "width": 1920,
+      "height": 1080
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Viewport modificado"
+  },
+  {
+    "id": 279,
+    "category": "debugger",
+    "instruction": "Avanza un paso",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 280,
+    "category": "runtime",
+    "instruction": "Cuantas imagenes tiene la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('img').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 281,
+    "category": "navigation",
+    "instruction": "Cierra la pestana actual",
+    "cdp_command": "Target.closeTarget",
+    "cdp_params": {
+      "targetId": "{{TARGET_ID}}"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pestana cerrada"
+  },
+  {
+    "id": 282,
+    "category": "debugger",
+    "instruction": "Pon un breakpoint en app.js linea 42",
+    "cdp_command": "Debugger.setBreakpointByUrl",
+    "cdp_params": {
+      "url": "app.js",
+      "lineNumber": 10
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Breakpoint establecido"
+  },
+  {
+    "id": 283,
+    "category": "console",
+    "instruction": "Hay errores en consola?",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 284,
+    "category": "runtime",
+    "instruction": "Cual es el user agent?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "navigator.userAgent",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 285,
+    "category": "runtime",
+    "instruction": "Simula un click en el menu",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').click()",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 286,
+    "category": "network",
+    "instruction": "Limpia el cache",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "Limpia el cache",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 287,
+    "category": "network",
+    "instruction": "Limpia las cookies",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 288,
+    "category": "console",
+    "instruction": "Verifica si hay errores de JavaScript",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "window.__errors?.length || 0",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 289,
+    "category": "dom",
+    "instruction": "Que atributos tiene el elemento body?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "body"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 290,
+    "category": "navigation",
+    "instruction": "Navega a google.com",
+    "cdp_command": "Page.navigate",
+    "cdp_params": {
+      "url": "https://youtube.com"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina cargada"
+  },
+  {
+    "id": 291,
+    "category": "performance",
+    "instruction": "Comienza el profiling",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 292,
+    "category": "dom",
+    "instruction": "Cual es el tamano del elemento #container?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#container"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 293,
+    "category": "debugger",
+    "instruction": "Sale de la funcion actual",
+    "cdp_command": "Debugger.stepOut",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Salido de funcion"
+  },
+  {
+    "id": 294,
+    "category": "navigation",
+    "instruction": "Abre una nueva pestana con github.com",
+    "cdp_command": "Target.createTarget",
+    "cdp_params": {
+      "url": "https://twitter.com"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Nueva pestana creada"
+  },
+  {
+    "id": 295,
+    "category": "runtime",
+    "instruction": "Escribe 'test' en el campo username",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').value = '{{text}}'",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 296,
+    "category": "debugger",
+    "instruction": "Pon un breakpoint en app.js linea 42",
+    "cdp_command": "Debugger.setBreakpointByUrl",
+    "cdp_params": {
+      "url": "app.js",
+      "lineNumber": 78
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Breakpoint establecido"
+  },
+  {
+    "id": 297,
+    "category": "network",
+    "instruction": "Lista todos los requests",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 298,
+    "category": "navigation",
+    "instruction": "Cambia el tamano a 1920x1080",
+    "cdp_command": "Emulation.setDeviceMetricsOverride",
+    "cdp_params": {
+      "width": 1920,
+      "height": 1080
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Viewport modificado"
+  },
+  {
+    "id": 299,
+    "category": "runtime",
+    "instruction": "Que cookies hay en este sitio?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 300,
+    "category": "dom",
+    "instruction": "Anade disabled al boton submit",
+    "cdp_command": "DOM.setAttributeValue",
+    "cdp_params": {
+      "nodeId": 888,
+      "name": "disabled",
+      "value": "active"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Atributo modificado"
+  },
+  {
+    "id": 301,
+    "category": "navigation",
+    "instruction": "Recarga la pagina sin usar cache",
+    "cdp_command": "Page.reload",
+    "cdp_params": {
+      "ignoreCache": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina recargada"
+  },
+  {
+    "id": 302,
+    "category": "runtime",
+    "instruction": "Cual es el user agent?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "navigator.userAgent",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 303,
+    "category": "runtime",
+    "instruction": "Que cookies hay en este sitio?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 304,
+    "category": "runtime",
+    "instruction": "Ejecuta document.title",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.title",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 305,
+    "category": "runtime",
+    "instruction": "Cuantos listeners hay en el documento?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "getEventListeners(document).length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 306,
+    "category": "runtime",
+    "instruction": "Cual es el user agent?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "navigator.userAgent",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 307,
+    "category": "navigation",
+    "instruction": "Navega a google.com",
+    "cdp_command": "Page.navigate",
+    "cdp_params": {
+      "url": "https://perplexity.ai"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina cargada"
+  },
+  {
+    "id": 308,
+    "category": "network",
+    "instruction": "Limpia las cookies",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 309,
+    "category": "network",
+    "instruction": "Limpia las cookies",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 310,
+    "category": "dom",
+    "instruction": "Cual es el tamano del elemento #container?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#container"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 311,
+    "category": "performance",
+    "instruction": "Activa el profiler de CPU",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 312,
+    "category": "runtime",
+    "instruction": "Cual es la posicion del scroll?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "{x: window.scrollX, y: window.scrollY}",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 313,
+    "category": "console",
+    "instruction": "Cuantos errores hay?",
+    "cdp_command": "DOM.querySelectorAll",
+    "cdp_params": {
+      "selector": "a"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Elementos encontrados"
+  },
+  {
+    "id": 314,
+    "category": "runtime",
+    "instruction": "Que version de React usa esta app?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "Object.keys(window).filter(k => k.includes('react') || k.includes('vue')).join(', ')",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 315,
+    "category": "runtime",
+    "instruction": "Cual es el user agent?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "navigator.userAgent",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 316,
+    "category": "runtime",
+    "instruction": "Cuantos listeners hay en el documento?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "getEventListeners(document).length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 317,
+    "category": "memory",
+    "instruction": "Fuerza garbage collection",
+    "cdp_command": "HeapProfiler.collectGarbage",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "GC ejecutado"
+  },
+  {
+    "id": 318,
+    "category": "debugger",
+    "instruction": "Activa el debugger",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 319,
+    "category": "debugger",
+    "instruction": "Continua la ejecucion",
+    "cdp_command": "Debugger.resume",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion reanudada"
+  },
+  {
+    "id": 320,
+    "category": "runtime",
+    "instruction": "Escribe 'test' en el campo username",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').value = '{{text}}'",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 321,
+    "category": "network",
+    "instruction": "Intercepta las peticiones a /api/*",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 322,
+    "category": "runtime",
+    "instruction": "Cual es el titulo de la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.title",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 323,
+    "category": "debugger",
+    "instruction": "Pon un breakpoint en app.js linea 42",
+    "cdp_command": "Debugger.setBreakpointByUrl",
+    "cdp_params": {
+      "url": "app.js",
+      "lineNumber": 196
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Breakpoint establecido"
+  },
+  {
+    "id": 324,
+    "category": "runtime",
+    "instruction": "Cual es la posicion del scroll?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "{x: window.scrollX, y: window.scrollY}",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 325,
+    "category": "runtime",
+    "instruction": "Que version de React usa esta app?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "Object.keys(window).filter(k => k.includes('react') || k.includes('vue')).join(', ')",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 326,
+    "category": "debugger",
+    "instruction": "Sale de la funcion actual",
+    "cdp_command": "Debugger.stepOut",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Salido de funcion"
+  },
+  {
+    "id": 327,
+    "category": "console",
+    "instruction": "Hay errores en consola?",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 328,
+    "category": "network",
+    "instruction": "Activa el monitoreo de red",
+    "cdp_command": "Network.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Red habilitada"
+  },
+  {
+    "id": 329,
+    "category": "runtime",
+    "instruction": "Cuantos listeners hay en el documento?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "getEventListeners(document).length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 330,
+    "category": "dom",
+    "instruction": "Que atributos tiene el elemento body?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "body"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 331,
+    "category": "performance",
+    "instruction": "Activa el profiler de CPU",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 332,
+    "category": "debugger",
+    "instruction": "Sale de la funcion actual",
+    "cdp_command": "Debugger.stepOut",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Salido de funcion"
+  },
+  {
+    "id": 333,
+    "category": "debugger",
+    "instruction": "Continua la ejecucion",
+    "cdp_command": "Debugger.resume",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion reanudada"
+  },
+  {
+    "id": 334,
+    "category": "console",
+    "instruction": "Hay errores en consola?",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 335,
+    "category": "runtime",
+    "instruction": "Cuantos listeners hay en el documento?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "getEventListeners(document).length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 336,
+    "category": "network",
+    "instruction": "Intercepta las peticiones a /api/*",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 337,
+    "category": "dom",
+    "instruction": "Anade disabled al boton submit",
+    "cdp_command": "DOM.setAttributeValue",
+    "cdp_params": {
+      "nodeId": 923,
+      "name": "disabled",
+      "value": "enabled"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Atributo modificado"
+  },
+  {
+    "id": 338,
+    "category": "debugger",
+    "instruction": "Continua la ejecucion",
+    "cdp_command": "Debugger.resume",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion reanudada"
+  },
+  {
+    "id": 339,
+    "category": "navigation",
+    "instruction": "Recarga la pagina sin usar cache",
+    "cdp_command": "Page.reload",
+    "cdp_params": {
+      "ignoreCache": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina recargada"
+  },
+  {
+    "id": 340,
+    "category": "runtime",
+    "instruction": "Cual es la posicion del scroll?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "{x: window.scrollX, y: window.scrollY}",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 341,
+    "category": "runtime",
+    "instruction": "Dame la URL actual",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "window.location.href",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 342,
+    "category": "runtime",
+    "instruction": "Hay elementos con aria-label?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('[aria-label]').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 343,
+    "category": "runtime",
+    "instruction": "Ejecuta document.title",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.title",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 344,
+    "category": "memory",
+    "instruction": "Toma un snapshot del heap",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 345,
+    "category": "dom",
+    "instruction": "Anade disabled al boton submit",
+    "cdp_command": "DOM.setAttributeValue",
+    "cdp_params": {
+      "nodeId": 761,
+      "name": "disabled",
+      "value": "test"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Atributo modificado"
+  },
+  {
+    "id": 346,
+    "category": "runtime",
+    "instruction": "Simula un click en el menu",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').click()",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 347,
+    "category": "navigation",
+    "instruction": "Recarga la pagina sin usar cache",
+    "cdp_command": "Page.reload",
+    "cdp_params": {
+      "ignoreCache": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina recargada"
+  },
+  {
+    "id": 348,
+    "category": "console",
+    "instruction": "Cuantos errores hay?",
+    "cdp_command": "DOM.querySelectorAll",
+    "cdp_params": {
+      "selector": "a"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Elementos encontrados"
+  },
+  {
+    "id": 349,
+    "category": "runtime",
+    "instruction": "Dame la URL actual",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "window.location.href",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 350,
+    "category": "runtime",
+    "instruction": "Escribe 'test' en el campo username",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').value = '{{text}}'",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 351,
+    "category": "runtime",
+    "instruction": "Hay elementos con aria-label?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('[aria-label]').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 352,
+    "category": "runtime",
+    "instruction": "Simula un click en el menu",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').click()",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 353,
+    "category": "dom",
+    "instruction": "Cuantos elementos div hay?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "div"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 354,
+    "category": "network",
+    "instruction": "Lista todos los requests",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 355,
+    "category": "runtime",
+    "instruction": "Ejecuta document.title",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.title",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 356,
+    "category": "debugger",
+    "instruction": "Avanza un paso",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 357,
+    "category": "runtime",
+    "instruction": "Ejecuta document.title",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.title",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 358,
+    "category": "console",
+    "instruction": "Verifica si hay errores de JavaScript",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "window.__errors?.length || 0",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 359,
+    "category": "runtime",
+    "instruction": "Que cookies hay en este sitio?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 360,
+    "category": "runtime",
+    "instruction": "Dame la URL actual",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "window.location.href",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 361,
+    "category": "runtime",
+    "instruction": "Lista las claves de localStorage",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "JSON.stringify(localStorage)",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 362,
+    "category": "console",
+    "instruction": "Cuantos errores hay?",
+    "cdp_command": "DOM.querySelectorAll",
+    "cdp_params": {
+      "selector": "a"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Elementos encontrados"
+  },
+  {
+    "id": 363,
+    "category": "navigation",
+    "instruction": "Navega a google.com",
+    "cdp_command": "Page.navigate",
+    "cdp_params": {
+      "url": "https://twitter.com"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina cargada"
+  },
+  {
+    "id": 364,
+    "category": "memory",
+    "instruction": "Fuerza garbage collection",
+    "cdp_command": "HeapProfiler.collectGarbage",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "GC ejecutado"
+  },
+  {
+    "id": 365,
+    "category": "dom",
+    "instruction": "Encuentra el elemento button",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "button"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 366,
+    "category": "debugger",
+    "instruction": "Sale de la funcion actual",
+    "cdp_command": "Debugger.stepOut",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Salido de funcion"
+  },
+  {
+    "id": 367,
+    "category": "debugger",
+    "instruction": "Entra en la siguiente funcion",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 368,
+    "category": "dom",
+    "instruction": "Anade disabled al boton submit",
+    "cdp_command": "DOM.setAttributeValue",
+    "cdp_params": {
+      "nodeId": 140,
+      "name": "disabled",
+      "value": "active"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Atributo modificado"
+  },
+  {
+    "id": 369,
+    "category": "navigation",
+    "instruction": "Recarga la pagina sin usar cache",
+    "cdp_command": "Page.reload",
+    "cdp_params": {
+      "ignoreCache": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina recargada"
+  },
+  {
+    "id": 370,
+    "category": "runtime",
+    "instruction": "Lista las claves de localStorage",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "JSON.stringify(localStorage)",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 371,
+    "category": "performance",
+    "instruction": "Que metricas de performance hay?",
+    "cdp_command": "Performance.getMetrics",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Metricas obtenidas"
+  },
+  {
+    "id": 372,
+    "category": "dom",
+    "instruction": "Anade disabled al boton submit",
+    "cdp_command": "DOM.setAttributeValue",
+    "cdp_params": {
+      "nodeId": 806,
+      "name": "disabled",
+      "value": "test"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Atributo modificado"
+  },
+  {
+    "id": 373,
+    "category": "navigation",
+    "instruction": "Cambia el tamano a 1920x1080",
+    "cdp_command": "Emulation.setDeviceMetricsOverride",
+    "cdp_params": {
+      "width": 1920,
+      "height": 1080
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Viewport modificado"
+  },
+  {
+    "id": 374,
+    "category": "debugger",
+    "instruction": "Continua la ejecucion",
+    "cdp_command": "Debugger.resume",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion reanudada"
+  },
+  {
+    "id": 375,
+    "category": "runtime",
+    "instruction": "Lista las claves de localStorage",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "JSON.stringify(localStorage)",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 376,
+    "category": "debugger",
+    "instruction": "Avanza un paso",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 377,
+    "category": "debugger",
+    "instruction": "Avanza un paso",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 378,
+    "category": "debugger",
+    "instruction": "Pon un breakpoint en app.js linea 42",
+    "cdp_command": "Debugger.setBreakpointByUrl",
+    "cdp_params": {
+      "url": "app.js",
+      "lineNumber": 152
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Breakpoint establecido"
+  },
+  {
+    "id": 379,
+    "category": "debugger",
+    "instruction": "Avanza un paso",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 380,
+    "category": "console",
+    "instruction": "Activa el monitoreo de consola",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 381,
+    "category": "debugger",
+    "instruction": "Sale de la funcion actual",
+    "cdp_command": "Debugger.stepOut",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Salido de funcion"
+  },
+  {
+    "id": 382,
+    "category": "navigation",
+    "instruction": "Ve a perplexity.ai",
+    "cdp_command": "Page.navigate",
+    "cdp_params": {
+      "url": "https://youtube.com"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina cargada"
+  },
+  {
+    "id": 383,
+    "category": "memory",
+    "instruction": "Fuerza garbage collection",
+    "cdp_command": "HeapProfiler.collectGarbage",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "GC ejecutado"
+  },
+  {
+    "id": 384,
+    "category": "runtime",
+    "instruction": "Cual es el user agent?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "navigator.userAgent",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 385,
+    "category": "runtime",
+    "instruction": "Cual es el user agent?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "navigator.userAgent",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 386,
+    "category": "console",
+    "instruction": "Cuantos errores hay?",
+    "cdp_command": "DOM.querySelectorAll",
+    "cdp_params": {
+      "selector": "a"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Elementos encontrados"
+  },
+  {
+    "id": 387,
+    "category": "navigation",
+    "instruction": "Cierra la pestana actual",
+    "cdp_command": "Target.closeTarget",
+    "cdp_params": {
+      "targetId": "{{TARGET_ID}}"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pestana cerrada"
+  },
+  {
+    "id": 388,
+    "category": "runtime",
+    "instruction": "Cuantos listeners hay en el documento?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "getEventListeners(document).length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 389,
+    "category": "memory",
+    "instruction": "Hay memory leaks?",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 390,
+    "category": "navigation",
+    "instruction": "Trae la pestana al frente",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 391,
+    "category": "debugger",
+    "instruction": "Pausa la ejecucion",
+    "cdp_command": "Debugger.pause",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion pausada"
+  },
+  {
+    "id": 392,
+    "category": "runtime",
+    "instruction": "Cuantos listeners hay en el documento?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "getEventListeners(document).length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 393,
+    "category": "network",
+    "instruction": "Intercepta las peticiones a /api/*",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 394,
+    "category": "runtime",
+    "instruction": "Hay elementos con aria-label?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('[aria-label]').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 395,
+    "category": "console",
+    "instruction": "Cuantos errores hay?",
+    "cdp_command": "DOM.querySelectorAll",
+    "cdp_params": {
+      "selector": "a"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Elementos encontrados"
+  },
+  {
+    "id": 396,
+    "category": "runtime",
+    "instruction": "Que cookies hay en este sitio?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 397,
+    "category": "dom",
+    "instruction": "Dame el HTML del elemento #main",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#main"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 398,
+    "category": "runtime",
+    "instruction": "Que cookies hay en este sitio?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 399,
+    "category": "memory",
+    "instruction": "Hay memory leaks?",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 400,
+    "category": "navigation",
+    "instruction": "Recarga la pagina sin usar cache",
+    "cdp_command": "Page.reload",
+    "cdp_params": {
+      "ignoreCache": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina recargada"
+  },
+  {
+    "id": 401,
+    "category": "navigation",
+    "instruction": "Cambia el tamano a 1920x1080",
+    "cdp_command": "Emulation.setDeviceMetricsOverride",
+    "cdp_params": {
+      "width": 1920,
+      "height": 1080
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Viewport modificado"
+  },
+  {
+    "id": 402,
+    "category": "runtime",
+    "instruction": "Cuantos listeners hay en el documento?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "getEventListeners(document).length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 403,
+    "category": "runtime",
+    "instruction": "Cuantos listeners hay en el documento?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "getEventListeners(document).length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 404,
+    "category": "console",
+    "instruction": "Verifica si hay errores de JavaScript",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "window.__errors?.length || 0",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 405,
+    "category": "runtime",
+    "instruction": "Hay elementos con aria-label?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('[aria-label]').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 406,
+    "category": "memory",
+    "instruction": "Toma un snapshot del heap",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 407,
+    "category": "runtime",
+    "instruction": "Lista las claves de localStorage",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "JSON.stringify(localStorage)",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 408,
+    "category": "dom",
+    "instruction": "Cual es el tamano del elemento #container?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#container"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 409,
+    "category": "network",
+    "instruction": "Limpia el cache",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "Limpia el cache",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 410,
+    "category": "runtime",
+    "instruction": "Simula un click en el menu",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').click()",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 411,
+    "category": "debugger",
+    "instruction": "Pon un breakpoint en app.js linea 42",
+    "cdp_command": "Debugger.setBreakpointByUrl",
+    "cdp_params": {
+      "url": "app.js",
+      "lineNumber": 98
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Breakpoint establecido"
+  },
+  {
+    "id": 412,
+    "category": "memory",
+    "instruction": "Toma un snapshot del heap",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 413,
+    "category": "runtime",
+    "instruction": "Lista las claves de localStorage",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "JSON.stringify(localStorage)",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 414,
+    "category": "navigation",
+    "instruction": "Cambia el tamano a 1920x1080",
+    "cdp_command": "Emulation.setDeviceMetricsOverride",
+    "cdp_params": {
+      "width": 1920,
+      "height": 1080
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Viewport modificado"
+  },
+  {
+    "id": 415,
+    "category": "debugger",
+    "instruction": "Sale de la funcion actual",
+    "cdp_command": "Debugger.stepOut",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Salido de funcion"
+  },
+  {
+    "id": 416,
+    "category": "runtime",
+    "instruction": "Cual es la posicion del scroll?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "{x: window.scrollX, y: window.scrollY}",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 417,
+    "category": "runtime",
+    "instruction": "Esta la pagina completamente cargada?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.readyState",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 418,
+    "category": "dom",
+    "instruction": "Anade disabled al boton submit",
+    "cdp_command": "DOM.setAttributeValue",
+    "cdp_params": {
+      "nodeId": 126,
+      "name": "disabled",
+      "value": "true"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Atributo modificado"
+  },
+  {
+    "id": 419,
+    "category": "runtime",
+    "instruction": "Cual es el titulo de la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.title",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 420,
+    "category": "console",
+    "instruction": "Hay errores en consola?",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 421,
+    "category": "dom",
+    "instruction": "Que atributos tiene el elemento body?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "body"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 422,
+    "category": "dom",
+    "instruction": "Dame el HTML del elemento #main",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#main"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 423,
+    "category": "runtime",
+    "instruction": "Cual es el titulo de la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.title",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 424,
+    "category": "navigation",
+    "instruction": "Abre una nueva pestana con github.com",
+    "cdp_command": "Target.createTarget",
+    "cdp_params": {
+      "url": "https://google.com"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Nueva pestana creada"
+  },
+  {
+    "id": 425,
+    "category": "navigation",
+    "instruction": "Cierra la pestana actual",
+    "cdp_command": "Target.closeTarget",
+    "cdp_params": {
+      "targetId": "{{TARGET_ID}}"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pestana cerrada"
+  },
+  {
+    "id": 426,
+    "category": "debugger",
+    "instruction": "Activa el debugger",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 427,
+    "category": "network",
+    "instruction": "Limpia el cache",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "Limpia el cache",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 428,
+    "category": "navigation",
+    "instruction": "Cambia el tamano a 1920x1080",
+    "cdp_command": "Emulation.setDeviceMetricsOverride",
+    "cdp_params": {
+      "width": 1920,
+      "height": 1080
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Viewport modificado"
+  },
+  {
+    "id": 429,
+    "category": "network",
+    "instruction": "Activa el monitoreo de red",
+    "cdp_command": "Network.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Red habilitada"
+  },
+  {
+    "id": 430,
+    "category": "debugger",
+    "instruction": "Continua la ejecucion",
+    "cdp_command": "Debugger.resume",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion reanudada"
+  },
+  {
+    "id": 431,
+    "category": "runtime",
+    "instruction": "Ejecuta document.title",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.title",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 432,
+    "category": "network",
+    "instruction": "Limpia las cookies",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 433,
+    "category": "dom",
+    "instruction": "Anade disabled al boton submit",
+    "cdp_command": "DOM.setAttributeValue",
+    "cdp_params": {
+      "nodeId": 308,
+      "name": "disabled",
+      "value": "test"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Atributo modificado"
+  },
+  {
+    "id": 434,
+    "category": "runtime",
+    "instruction": "Hay elementos con aria-label?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('[aria-label]').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 435,
+    "category": "runtime",
+    "instruction": "Dame la URL actual",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "window.location.href",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 436,
+    "category": "dom",
+    "instruction": "Cuantos elementos div hay?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "div"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 437,
+    "category": "runtime",
+    "instruction": "Dame la URL actual",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "window.location.href",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 438,
+    "category": "dom",
+    "instruction": "Cual es el tamano del elemento #container?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#container"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 439,
+    "category": "network",
+    "instruction": "Activa el monitoreo de red",
+    "cdp_command": "Network.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Red habilitada"
+  },
+  {
+    "id": 440,
+    "category": "runtime",
+    "instruction": "Cual es el user agent?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "navigator.userAgent",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 441,
+    "category": "navigation",
+    "instruction": "Trae la pestana al frente",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 442,
+    "category": "debugger",
+    "instruction": "Pon un breakpoint en app.js linea 42",
+    "cdp_command": "Debugger.setBreakpointByUrl",
+    "cdp_params": {
+      "url": "app.js",
+      "lineNumber": 58
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Breakpoint establecido"
+  },
+  {
+    "id": 443,
+    "category": "console",
+    "instruction": "Cuantos errores hay?",
+    "cdp_command": "DOM.querySelectorAll",
+    "cdp_params": {
+      "selector": "a"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Elementos encontrados"
+  },
+  {
+    "id": 444,
+    "category": "debugger",
+    "instruction": "Continua la ejecucion",
+    "cdp_command": "Debugger.resume",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion reanudada"
+  },
+  {
+    "id": 445,
+    "category": "runtime",
+    "instruction": "Cual es la posicion del scroll?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "{x: window.scrollX, y: window.scrollY}",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 446,
+    "category": "runtime",
+    "instruction": "Simula un click en el menu",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').click()",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 447,
+    "category": "performance",
+    "instruction": "Activa el profiler de CPU",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 448,
+    "category": "dom",
+    "instruction": "Encuentra el elemento button",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "button"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 449,
+    "category": "runtime",
+    "instruction": "Escribe 'test' en el campo username",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').value = '{{text}}'",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 450,
+    "category": "runtime",
+    "instruction": "Que cookies hay en este sitio?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 451,
+    "category": "console",
+    "instruction": "Hay errores en consola?",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 452,
+    "category": "dom",
+    "instruction": "Que atributos tiene el elemento body?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "body"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 453,
+    "category": "debugger",
+    "instruction": "Avanza un paso",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 454,
+    "category": "runtime",
+    "instruction": "Cuantas imagenes tiene la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('img').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 455,
+    "category": "debugger",
+    "instruction": "Sale de la funcion actual",
+    "cdp_command": "Debugger.stepOut",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Salido de funcion"
+  },
+  {
+    "id": 456,
+    "category": "performance",
+    "instruction": "Deten el profiling",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de performance",
+    "response_example": "Profiler activado"
+  },
+  {
+    "id": 457,
+    "category": "network",
+    "instruction": "Limpia las cookies",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.cookie",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 458,
+    "category": "dom",
+    "instruction": "Encuentra el elemento button",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "button"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 459,
+    "category": "navigation",
+    "instruction": "Navega a google.com",
+    "cdp_command": "Page.navigate",
+    "cdp_params": {
+      "url": "https://perplexity.ai"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina cargada"
+  },
+  {
+    "id": 460,
+    "category": "memory",
+    "instruction": "Toma un snapshot del heap",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "Snapshot capturado"
+  },
+  {
+    "id": 461,
+    "category": "debugger",
+    "instruction": "Continua la ejecucion",
+    "cdp_command": "Debugger.resume",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion reanudada"
+  },
+  {
+    "id": 462,
+    "category": "console",
+    "instruction": "Hay errores en consola?",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 463,
+    "category": "runtime",
+    "instruction": "Hay elementos con aria-label?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('[aria-label]').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 464,
+    "category": "memory",
+    "instruction": "Fuerza garbage collection",
+    "cdp_command": "HeapProfiler.collectGarbage",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de memory",
+    "response_example": "GC ejecutado"
+  },
+  {
+    "id": 465,
+    "category": "navigation",
+    "instruction": "Cambia el tamano a 1920x1080",
+    "cdp_command": "Emulation.setDeviceMetricsOverride",
+    "cdp_params": {
+      "width": 1920,
+      "height": 1080
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Viewport modificado"
+  },
+  {
+    "id": 466,
+    "category": "runtime",
+    "instruction": "Escribe 'test' en el campo username",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').value = '{{text}}'",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 467,
+    "category": "navigation",
+    "instruction": "Cambia el tamano a 1920x1080",
+    "cdp_command": "Emulation.setDeviceMetricsOverride",
+    "cdp_params": {
+      "width": 1920,
+      "height": 1080
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Viewport modificado"
+  },
+  {
+    "id": 468,
+    "category": "navigation",
+    "instruction": "Cierra la pestana actual",
+    "cdp_command": "Target.closeTarget",
+    "cdp_params": {
+      "targetId": "{{TARGET_ID}}"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pestana cerrada"
+  },
+  {
+    "id": 469,
+    "category": "navigation",
+    "instruction": "Cambia el tamano a 1920x1080",
+    "cdp_command": "Emulation.setDeviceMetricsOverride",
+    "cdp_params": {
+      "width": 1920,
+      "height": 1080
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Viewport modificado"
+  },
+  {
+    "id": 470,
+    "category": "runtime",
+    "instruction": "Esta la pagina completamente cargada?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.readyState",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 471,
+    "category": "network",
+    "instruction": "Limpia el cache",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "Limpia el cache",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 472,
+    "category": "runtime",
+    "instruction": "Simula un click en el menu",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelector('{{selector}}').click()",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 473,
+    "category": "dom",
+    "instruction": "Anade disabled al boton submit",
+    "cdp_command": "DOM.setAttributeValue",
+    "cdp_params": {
+      "nodeId": 84,
+      "name": "disabled",
+      "value": "true"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Atributo modificado"
+  },
+  {
+    "id": 474,
+    "category": "debugger",
+    "instruction": "Pon un breakpoint en app.js linea 42",
+    "cdp_command": "Debugger.setBreakpointByUrl",
+    "cdp_params": {
+      "url": "app.js",
+      "lineNumber": 79
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Breakpoint establecido"
+  },
+  {
+    "id": 475,
+    "category": "runtime",
+    "instruction": "Cual es el titulo de la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.title",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 476,
+    "category": "dom",
+    "instruction": "Cual es el tamano del elemento #container?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#container"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 477,
+    "category": "dom",
+    "instruction": "Cual es el tamano del elemento #container?",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {
+      "selector": "#container"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Elemento encontrado"
+  },
+  {
+    "id": 478,
+    "category": "network",
+    "instruction": "Limpia el cache",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "Limpia el cache",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 479,
+    "category": "runtime",
+    "instruction": "Cual es el titulo de la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.title",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 480,
+    "category": "runtime",
+    "instruction": "Esta la pagina completamente cargada?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.readyState",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 481,
+    "category": "debugger",
+    "instruction": "Entra en la siguiente funcion",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 482,
+    "category": "network",
+    "instruction": "Activa el monitoreo de red",
+    "cdp_command": "Network.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Red habilitada"
+  },
+  {
+    "id": 483,
+    "category": "runtime",
+    "instruction": "Cuantas imagenes tiene la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('img').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 484,
+    "category": "runtime",
+    "instruction": "Cual es el user agent?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "navigator.userAgent",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 485,
+    "category": "runtime",
+    "instruction": "Hay elementos con aria-label?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.querySelectorAll('[aria-label]').length",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 486,
+    "category": "debugger",
+    "instruction": "Avanza un paso",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Avanzado un paso"
+  },
+  {
+    "id": 487,
+    "category": "debugger",
+    "instruction": "Activa el debugger",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 488,
+    "category": "network",
+    "instruction": "Limpia el cache",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "Limpia el cache",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 489,
+    "category": "network",
+    "instruction": "Intercepta las peticiones a /api/*",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de network",
+    "response_example": "Requests listados"
+  },
+  {
+    "id": 490,
+    "category": "runtime",
+    "instruction": "Ejecuta document.title",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "document.title",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 491,
+    "category": "runtime",
+    "instruction": "Cual es la posicion del scroll?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {
+      "expression": "{x: window.scrollX, y: window.scrollY}",
+      "returnByValue": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de runtime",
+    "response_example": "Resultado obtenido"
+  },
+  {
+    "id": 492,
+    "category": "console",
+    "instruction": "Activa el monitoreo de consola",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 493,
+    "category": "console",
+    "instruction": "Hay errores en consola?",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 494,
+    "category": "navigation",
+    "instruction": "Trae la pestana al frente",
+    "cdp_command": "Page.bringToFront",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina traida al frente"
+  },
+  {
+    "id": 495,
+    "category": "debugger",
+    "instruction": "Continua la ejecucion",
+    "cdp_command": "Debugger.resume",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion reanudada"
+  },
+  {
+    "id": 496,
+    "category": "navigation",
+    "instruction": "Navega a google.com",
+    "cdp_command": "Page.navigate",
+    "cdp_params": {
+      "url": "https://twitter.com"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina cargada"
+  },
+  {
+    "id": 497,
+    "category": "console",
+    "instruction": "Hay errores en consola?",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de console",
+    "response_example": "Consola habilitada"
+  },
+  {
+    "id": 498,
+    "category": "dom",
+    "instruction": "Anade disabled al boton submit",
+    "cdp_command": "DOM.setAttributeValue",
+    "cdp_params": {
+      "nodeId": 718,
+      "name": "disabled",
+      "value": "true"
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de dom",
+    "response_example": "Atributo modificado"
+  },
+  {
+    "id": 499,
+    "category": "debugger",
+    "instruction": "Pausa la ejecucion",
+    "cdp_command": "Debugger.pause",
+    "cdp_params": {},
+    "context": "Usando Chrome DevTools Protocol para analisis de debugger",
+    "response_example": "Ejecucion pausada"
+  },
+  {
+    "id": 500,
+    "category": "navigation",
+    "instruction": "Recarga la pagina sin usar cache",
+    "cdp_command": "Page.reload",
+    "cdp_params": {
+      "ignoreCache": true
+    },
+    "context": "Usando Chrome DevTools Protocol para analisis de navigation",
+    "response_example": "Pagina recargada"
+  }
+]
