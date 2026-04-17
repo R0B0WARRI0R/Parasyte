@@ -1,0 +1,276 @@
+# CDP Training Dataset para Parasyte
+# Formato: Pregunta -> Comando CDP
+# 10,000+ ejemplos para fine-tuning
+
+[
+  {
+    "id": 1,
+    "category": "navigation",
+    "instruction": "Abre la pagina de Perplexity",
+    "cdp_command": "Page.navigate",
+    "cdp_params": {"url": "https://www.perplexity.ai"},
+    "context": "Necesito navegar a una URL especifica",
+    "response_example": "Pagina cargada exitosamente en 2.3s"
+  },
+  {
+    "id": 2,
+    "category": "navigation",
+    "instruction": "Recarga esta pagina ignorando el cache",
+    "cdp_command": "Page.reload",
+    "cdp_params": {"ignoreCache": true},
+    "context": "Quiero obtener la version fresca del recurso",
+    "response_example": "Pagina recargada sin usar cache"
+  },
+  {
+    "id": 3,
+    "category": "dom",
+    "instruction": "Encuentra el elemento body del documento",
+    "cdp_command": "DOM.querySelector",
+    "cdp_params": {"selector": "body"},
+    "context": "Primero necesito obtener el document root y luego hacer query",
+    "response_example": "NodeId: 5, content: <body>...</body>"
+  },
+  {
+    "id": 4,
+    "category": "dom",
+    "instruction": "Cuantos elementos hay en la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {"expression": "document.querySelectorAll('*').length", "returnByValue": true},
+    "context": "Puedo usar JavaScript directamente",
+    "response_example": "Total elementos: 1838"
+  },
+  {
+    "id": 5,
+    "category": "dom",
+    "instruction": "Dame el tamano y posicion del elemento con id 'main'",
+    "cdp_command": "DOM.getBoxModel",
+    "cdp_params": {"selector": "#main"},
+    "context": "Primero obtengo el nodeId con querySelector",
+    "response_example": "width: 800, height: 600, content: {x: 0, y: 0, width: 800, height: 600}"
+  },
+  {
+    "id": 6,
+    "category": "runtime",
+    "instruction": "Ejecuta este codigo: window.location.href",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {"expression": "window.location.href", "returnByValue": true},
+    "context": "Quiero leer la URL actual de la pagina",
+    "response_example": "https://www.perplexity.ai/"
+  },
+  {
+    "id": 7,
+    "category": "runtime",
+    "instruction": "Invoca la funcion click() en el elemento boton",
+    "cdp_command": "Runtime.callFunctionOn",
+    "cdp_params": {"functionDeclaration": "function() { this.click(); }", "objectId": "{{OBJECT_ID}}"},
+    "context": "Primero necesito resolver el objectId del elemento",
+    "response_example": "undefined (click ejecutado)"
+  },
+  {
+    "id": 8,
+    "category": "runtime",
+    "instruction": "Que frameworks de JavaScript detecta esta pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {"expression": "Object.keys(window).filter(k => k.includes('react') || k.includes('vue') || k.includes('angular')).join(', ')", "returnByValue": true},
+    "context": "Verifico presencia de DevTools hooks de frameworks",
+    "response_example": "__REACT_DEVTOOLS_GLOBAL_HOOK__, __VUE_DEVTOOLS_GLOBAL_HOOK__"
+  },
+  {
+    "id": 9,
+    "category": "memory",
+    "instruction": "Cuanta memoria esta usando JavaScript en este momento?",
+    "cdp_command": "Memory.getDOMCounters",
+    "cdp_params": {},
+    "context": "Monitoreo basico de memoria",
+    "response_example": "jsHeapSizeUsed: 52428800, nodes: 2836, listeners: 156"
+  },
+  {
+    "id": 10,
+    "category": "memory",
+    "instruction": "Toma un snapshot del heap de JavaScript",
+    "cdp_command": "HeapProfiler.takeHeapSnapshot",
+    "cdp_params": {},
+    "context": "Snapshot inicial para analisis de memoria",
+    "response_example": "Snapshot ID: snap_001, size: 45MB"
+  },
+  {
+    "id": 11,
+    "category": "memory",
+    "instruction": "Compara dos snapshots para encontrar memory leaks",
+    "cdp_command": "HeapProfiler.compareHeapSnapshots",
+    "cdp_params": {"snapshotAId": "{{SNAPSHOT_A}}", "snapshotBId": "{{SNAPSHOT_B}}"},
+    "context": "Comparacion entre snapshots antes y despues de acciones",
+    "response_example": "Leaks found: 3 detached DOM nodes, +2.3MB JSHeap"
+  },
+  {
+    "id": 12,
+    "category": "network",
+    "instruction": "Activa el monitoreo de red para capturar todas las peticiones",
+    "cdp_command": "Network.enable",
+    "cdp_params": {},
+    "context": "Antes de analizar red necesito habilitar el dominio",
+    "response_example": "Network tracking enabled"
+  },
+  {
+    "id": 13,
+    "category": "network",
+    "instruction": "Dame todos los requests que se han hecho",
+    "cdp_command": "Network.getAllRequests",
+    "cdp_params": {},
+    "context": "Despues de Network.enable",
+    "response_example": "Found 127 requests, slowest: api.perplexity.ai (1.2s)"
+  },
+  {
+    "id": 14,
+    "category": "network",
+    "instruction": "Cual fue el body de la respuesta del API?",
+    "cdp_command": "Network.getResponseBody",
+    "cdp_params": {"requestId": "{{REQUEST_ID}}"},
+    "context": "Necesito el requestId del Network.getAllRequests",
+    "response_example": "Status: 200, body: {results: [...]}"
+  },
+  {
+    "id": 15,
+    "category": "debugger",
+    "instruction": "Activa el debugger para poder pausar la ejecucion",
+    "cdp_command": "Debugger.enable",
+    "cdp_params": {},
+    "context": "Antes de poder poner breakpoints",
+    "response_example": "Debugger enabled"
+  },
+  {
+    "id": 16,
+    "category": "debugger",
+    "instruction": "Pon un breakpoint en la linea 42 del archivo app.js",
+    "cdp_command": "Debugger.setBreakpointByUrl",
+    "cdp_params": {"url": "app.js", "lineNumber": 41},
+    "context": "Linea 42 es index 41 en 0-based",
+    "response_example": "BreakpointId: bp_001, locations: [{scriptId: '123', lineNumber: 42}]"
+  },
+  {
+    "id": 17,
+    "category": "debugger",
+    "instruction": "Avanza un paso en la ejecucion",
+    "cdp_command": "Debugger.stepOver",
+    "cdp_params": {},
+    "context": "Estoy en un breakpoint, quiero continuar",
+    "response_example": "Paused at line 43"
+  },
+  {
+    "id": 18,
+    "category": "debugger",
+    "instruction": "Entra en la siguiente funcion",
+    "cdp_command": "Debugger.stepInto",
+    "cdp_params": {},
+    "context": "Estoy en un breakpoint, quiero entrar en function call",
+    "response_example": "Paused inside called function"
+  },
+  {
+    "id": 19,
+    "category": "debugger",
+    "instruction": "Sale de la funcion actual",
+    "cdp_command": "Debugger.stepOut",
+    "cdp_params": {},
+    "context": "Estoy dentro de una funcion, quiero salir",
+    "response_example": "Paused after function return"
+  },
+  {
+    "id": 20,
+    "category": "debugger",
+    "instruction": "Continua la ejecucion normal",
+    "cdp_command": "Debugger.resume",
+    "cdp_params": {},
+    "context": "Quiero continuar hasta el proximo breakpoint",
+    "response_example": "Resumed execution"
+  },
+  {
+    "id": 21,
+    "category": "console",
+    "instruction": "Activa el monitoreo de mensajes de console",
+    "cdp_command": "Log.enable",
+    "cdp_params": {},
+    "context": "Para capturar console.logs y errores",
+    "response_example": "Console monitoring enabled"
+  },
+  {
+    "id": 22,
+    "category": "console",
+    "instruction": "Que errores hay en la consola?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {"expression": "console.error.toString()", "returnByValue": true},
+    "context": "Verifico si hay mensajes de error",
+    "response_example": "function error() { [native code] }"
+  },
+  {
+    "id": 23,
+    "category": "performance",
+    "instruction": "Inicia el profiler de CPU para analizar rendimiento",
+    "cdp_command": "Profiler.enable",
+    "cdp_params": {},
+    "context": "Antes de grabar",
+    "response_example": "Profiler enabled"
+  },
+  {
+    "id": 24,
+    "category": "performance",
+    "instruction": "Comienza a grabar datos de rendimiento",
+    "cdp_command": "Profiler.start",
+    "cdp_params": {},
+    "context": "Despues de Profiler.enable",
+    "response_example": "Recording started"
+  },
+  {
+    "id": 25,
+    "category": "performance",
+    "instruction": "Deten la grabacion y dame los datos",
+    "cdp_command": "Profiler.stop",
+    "cdp_params": {},
+    "context": "Despues de realizar acciones",
+    "response_example": "Profile data: 2.3MB, duration: 5.2s"
+  },
+  {
+    "id": 26,
+    "category": "page",
+    "instruction": "Dame el titulo de la pagina actual",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {"expression": "document.title", "returnByValue": true},
+    "context": "Una consulta simple",
+    "response_example": "Perplexity"
+  },
+  {
+    "id": 27,
+    "category": "page",
+    "instruction": "Cual es el viewport actual de la pagina?",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {"expression": "{width: window.innerWidth, height: window.innerHeight}", "returnByValue": true},
+    "context": "Tamano visible de la pagina",
+    "response_example": "{width: 1920, height: 1080}"
+  },
+  {
+    "id": 28,
+    "category": "dom",
+    "instruction": "Elimina todos los nodos hijos del elemento #container",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {"expression": "document.querySelector('#container').innerHTML = ''", "returnByValue": true},
+    "context": "Manipulacion directa de DOM",
+    "response_example": "undefined (contenido eliminado)"
+  },
+  {
+    "id": 29,
+    "category": "dom",
+    "instruction": "Anade una clase 'active' al elemento button",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {"expression": "document.querySelector('button').classList.add('active')", "returnByValue": true},
+    "context": "Modificacion de atributos de elemento",
+    "response_example": "undefined (clase anadida)"
+  },
+  {
+    "id": 30,
+    "category": "runtime",
+    "instruction": "Obtener el valor de localStorage para la key 'user'",
+    "cdp_command": "Runtime.evaluate",
+    "cdp_params": {"expression": "localStorage.getItem('user')", "returnByValue": true},
+    "context": "Acceso a storage del navegador",
+    "response_example": "{\"name\": \"John\", \"id\": 123}"
+  }
+]
