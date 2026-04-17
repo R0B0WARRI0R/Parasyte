@@ -1,52 +1,53 @@
 # PARASYTE
-> Un LFM parasitando DevTools para control autonomo del navegador
+> An LFM that "parasites" Chrome DevTools for autonomous browser control
 
-## Concepto
+## Concept
 
 ```
 ┌─────────────────────────────────────────────────────┐
 │                     PARASYTE                        │
 │                                                     │
-│  El LFM se "adhiere" al DevTools como un virus     │
-│  Se modifica minima mente para controlar            │
-│  el navegador de forma autonoma                     │
+│  The LFM "attaches" to DevTools like a virus       │
+│  Modifies itself minimally to control               │
+│  the browser autonomously                           │
 │                                                     │
 └─────────────────────────────────────────────────────┘
 ```
 
-## Analogia Biologica
+## Biological Analogy
 
 | Virus | Parasyte |
 |-------|----------|
-| Se adhiere a receptores | Conecta via CDP |
-| Inyecta material genetico | Envia comandos |
-| Celula ejecuta | DevTools opera |
-| Replicacion/modificacion | Auto-mejora continua |
+| Attaches to receptors | Connects via CDP |
+| Injects genetic material | Sends commands |
+| Cell executes | DevTools operates |
+| Replication/modification | Continuous self-improvement |
 
-## Objetivo
+## Goal
 
-Crear un agente autonomo que controle DevTools para:
-- Debugging automatico
+Create an autonomous agent that controls DevTools for:
+- Automatic debugging
 - Performance profiling
 - Memory leak detection
 - Network analysis
-- DOM manipulation inteligente
+- Intelligent DOM manipulation
 
-## Stack Tecnico
+## Tech Stack
 
 - **LFM**: Liquid Foundation Models (Liquid AI)
 - **CDP**: Chrome DevTools Protocol
-- **Target**: Chrome/Chromium con remote debugging
+- **Target**: Chrome/Chromium with remote debugging
 
-## Estado
+## Status
 
-- [x] Investigacion completa (20 topicos)
-- [ ] Definir arquitectura
-- [ ] Prototype
+- [x] Deep research complete (20 topics)
+- [ ] Define architecture
+- [ ] Build prototype
 
-## Avance Investigacion
+## Structure
 
-- `research_notes.txt` - 20 secciones de investigacion profunda
-- `docs/` - Documentacion tecnica
-- `src/` - Codigo fuente
-- `tests/` - Pruebas unitarias
+```
+docs/           - Technical documentation
+src/           - Source code
+tests/         - Unit tests
+```

@@ -1,12 +1,12 @@
-# PARASYTE - ARQUITECTURA TECNICA
+# PARASYTE - TECHNICAL ARCHITECTURE
 
-## Resumen Ejecutivo
+## Executive Summary
 
-Parasyte es un sistema autonomo basado en Liquid Foundation Models (LFMs) que se conecta al Chrome DevTools Protocol (CDP) para controlar el navegador de forma inteligente. El concepto central es que el LFM funciona como un "parasito" que infecta DevTools y lo controla con minima modificacion propia.
+Parasyte is an autonomous system based on Liquid Foundation Models (LFMs) that connects to Chrome DevTools Protocol (CDP) to control the browser intelligently. The central concept is that the LFM functions as a "parasite" that infects DevTools and controls it with minimal self-modification.
 
 ---
 
-## 1. ARQUITECTURA GENERAL
+## 1. HIGH-LEVEL ARCHITECTURE
 
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
@@ -15,13 +15,13 @@ Parasyte es un sistema autonomo basado en Liquid Foundation Models (LFMs) que se
 │                                                                      │
 │  ┌──────────────┐     ┌──────────────┐     ┌──────────────────┐      │
 │  │     LFM      │────▶│   Adapter   │────▶│    CDP Bridge    │      │
-│  │   (cerebro)  │     │   Layer     │     │    (ejecutor)    │      │
+│  │   (brain)    │     │   Layer     │     │   (executor)     │      │
 │  └──────────────┘     └──────────────┘     └──────────────────┘      │
 │         │                    │                       │                 │
 │         │                    │                       ▼                 │
 │         │                    │            ┌──────────────────┐        │
-│         │                    │            │   Chrome con     │        │
-│         │                    │            │   Remote Debug   │        │
+│         │                    │            │   Chrome with     │        │
+│         │                    │            │   Remote Debug    │        │
 │         │                    │            └──────────────────┘        │
 │         │                    │                                        │
 │         ▼                    ▼                                        │
@@ -35,42 +35,39 @@ Parasyte es un sistema autonomo basado en Liquid Foundation Models (LFMs) que se
 
 ---
 
-## 2. COMPONENTES
+## 2. COMPONENTS
 
 ### 2.1 LFM Core
 
-**Modelo base**: LFM 2.5-1.2B (Liquid AI)
-- 1.2B parametros
-- Optimizado para edge inference
-- GGUF disponible para CPU inference
-- Arquitectura hibrida: LIV + Attention
+**Base model**: LFM 2.5-1.2B (Liquid AI)
+- 1.2B parameters
+- Optimized for edge inference
+- GGUF available for CPU inference
+- Hybrid architecture: LIV + Attention
 
-**Por que LFM:**
-- Baja latencia (<10ms/token en edge)
-- Adaptacion en inferencia
-- Eficiencia energetica 10x vs transformers
-- Escalamiento lineal
+**Why LFM:**
+- Low latency (<10ms/token on edge)
+- Inference-time adaptation
+- 10x energy efficiency vs transformers
+- Linear scaling
 
 ### 2.2 Adapter Layer
 
-Capa de traduccion que mapea outputs del LLM a comandos CDP.
+Translation layer mapping LLM outputs to CDP commands.
 
 ```typescript
 interface CDPAdapter {
-  // Input: intenciones del LFM
-  // Output: comandos CDP ejecutables
-  
   mapIntention(intent: string): CDPCommand;
   validateOutput(output: any): boolean;
   retryOnFailure(command: CDPCommand): CDPCommand;
 }
 ```
 
-**Objetivo**: Minima modificacion al LFM - solo el adapter se entrena.
+**Goal**: Minimal LFM modification - only the adapter is trained.
 
 ### 2.3 CDP Bridge
 
-Traductor bidireccional entre LFM y Chrome DevTools.
+Bidirectional translator between LFM and Chrome DevTools.
 
 ```
 LFM Output ──▶ CDPCommand ──▶ Chrome
@@ -79,17 +76,17 @@ LFM Output ──▶ CDPCommand ──▶ Chrome
 Chrome Event ──▶ LFM Input
 ```
 
-**Endpoints principales**:
+**Main endpoints**:
 - `ws://localhost:9222` - Remote debugging
-- `Target.createTarget` - Crear nuevas paginas
-- `Target.attachToTarget` - Conectar a paginas existentes
+- `Target.createTarget` - Create new tabs
+- `Target.attachToTarget` - Connect to existing tabs
 
-### 2.4 Tool Set CDP
+### 2.4 CDP Tool Set
 
-Conjunto de herramientas CDP disponibles:
+Available tool set:
 
-| Categoria | Herramientas |
-|-----------|--------------|
+| Category | Tools |
+|----------|-------|
 | **Navigation** | Page.navigate, Page.reload, Target.createTarget |
 | **DOM** | DOM.getDocument, DOM.querySelector, DOM.setOuterHTML |
 | **Runtime** | Runtime.evaluate, Runtime.callFunctionOn |
@@ -100,133 +97,133 @@ Conjunto de herramientas CDP disponibles:
 
 ---
 
-## 3. FLUJO DE OPERACION
+## 3. OPERATION FLOW
 
 ```
 1. USER INPUT
-   "¿Hay memory leaks en esta pagina?"
+   "Are there memory leaks on this page?"
 
 2. LFM PROCESSING
-   Analiza la pregunta → Detecta intencion
+   Analyzes question → Detects intention
 
 3. INTENTION MAPPING
-   "memory_leak_detection" → [comandos CDP]
+   "memory_leak_detection" → [CDP commands]
 
 4. CDP EXECUTION
    ┌─ Memory.getDOMCounters
    ├─ HeapProfiler.takeSnapshot
-   ├─ HeapProfiler.takeSnapshot (2do)
+   ├─ HeapProfiler.takeSnapshot (2nd)
    └─ HeapProfiler.compareSnapshots
 
 5. RESULT PARSING
    CDP responses → Parsed data
 
 6. LFM ANALYSIS
-   Analiza resultados → Genera diagnostico
+   Analyzes results → Generates diagnosis
 
 7. USER OUTPUT
-   "Se detectaron 3 objetos detached DOM..."
+   "Detected 3 detached DOM objects..."
 ```
 
 ---
 
-## 4. MODOS DE OPERACION
+## 4. OPERATION MODES
 
-### 4.1 Modo Directo (Supervisado)
+### 4.1 Direct Mode (Supervised)
 ```
-Usuario → LFM → Adapter → CDP → DevTools → Resultado
+User → LFM → Adapter → CDP → DevTools → Result
                                         ↓
-                                   Usuario
+                                   User
 ```
-- Usuario mantiene control
-- LFM solo asiste/analiza
-- Para debugging rapido
+- User maintains control
+- LFM only assists/analyzes
+- For quick debugging
 
-### 4.2 Modo Autonomo
+### 4.2 Autonomous Mode
 ```
 LFM → Adapter → CDP → DevTools → Feedback → LFM
   ↑                                              │
-  └────────────── loop continuo ─────────────────┘
+  └────────────── continuous loop ───────────────┘
 ```
-- LFM opera sin supervision
-- Auto-correction basada en resultados
-- Para tareas de larga duracion
+- LFM operates without supervision
+- Self-correction based on results
+- For long-running tasks
 
-### 4.3 Modo Parasyte (Objetivo Final)
+### 4.3 Parasyte Mode (End Goal)
 ```
 ┌─────────────────────────────────────────────┐
 │                                             │
-│  LFM "infecta" DevTools                    │
-│  Se adhiere via CDP                        │
-│  Opera el navegador                        │
-│  Se adapta segun feedback                  │
+│  LFM "infects" DevTools                    │
+│  Attaches via CDP                         │
+│  Operates the browser                     │
+│  Adapts based on feedback                 │
 │                                             │
-│  El LFM NO necesita ser reentrenado        │
-│  Solo el adapter aprende                    │
+│  LFM DOES NOT need retraining             │
+│  Only the adapter learns                   │
 │                                             │
 └─────────────────────────────────────────────┘
 ```
 
 ---
 
-## 5. CAPAS DE SEGURIDAD
+## 5. SECURITY LAYERS
 
 ### 5.1 Isolation
-- CDP commands en execution world aislado
-- No acceso a recursos del sistema
-- Permissions granulares
+- CDP commands in isolated execution world
+- No system resource access
+- Granular permissions
 
 ### 5.2 Validation
-- Comandos CDP validados antes de ejecutar
-- Lista blanca de comandos permitidos
-- Timeout en operaciones
+- CDP commands validated before execution
+- Allowlist of permitted commands
+- Timeout on operations
 
 ### 5.3 Audit
-- Log de todos los comandos ejecutados
-- Diff de cambios en DOM
-- Historial de acciones
+- Log of all executed commands
+- Diff of DOM changes
+- Action history
 
 ---
 
-## 6. COMPARATIVA CON COMPETIDORES
+## 6. COMPETITOR COMPARISON
 
-| Aspecto | Operator (OpenAI) | Computer Use (Claude) | PARASYTE |
-|---------|-------------------|---------------------|---------|
-| **Modelo** | GPT-4o | Claude 3.5 Sonnet | LFM |
-| **Protocolo** | API propietaria | API propietaria | CDP abierto |
-| **Latencia** | Alta | Media | Baja |
-| **Edge** | No | No | Si |
-| **Control** | Screenshot/VNC | Virtual desktop | DevTools directo |
-| **Debugging** | No nativo | Limitado | Nativo CDP |
-| **Costo** | $200/mo | Claude API | Local |
+| Aspect | Operator (OpenAI) | Computer Use (Claude) | PARASYTE |
+|--------|-------------------|----------------------|----------|
+| **Model** | GPT-4o | Claude 3.5 Sonnet | LFM |
+| **Protocol** | Proprietary API | Proprietary API | Open CDP |
+| **Latency** | High | Medium | Low |
+| **Edge** | No | No | Yes |
+| **Control** | Screenshot/VNC | Virtual desktop | Native DevTools |
+| **Debugging** | Not native | Limited | Native CDP |
+| **Cost** | $200/mo | Claude API | Local |
 
 ---
 
 ## 7. ROADMAP
 
-### Fase 1: Prototype (Semana 1-2)
-- [ ] Conectar LFM basico a CDP
-- [ ] Implementar adapter simple
-- [ ] Probar comandos basicos (navigate, evaluate)
+### Phase 1: Prototype (Week 1-2)
+- [ ] Connect basic LFM to CDP
+- [ ] Implement simple adapter
+- [ ] Test basic commands (navigate, evaluate)
 
-### Fase 2: Capabilities (Semana 3-4)
-- [ ] Soporte para debugging commands
-- [ ] Memory profiling basico
+### Phase 2: Capabilities (Week 3-4)
+- [ ] Support for debugging commands
+- [ ] Basic memory profiling
 - [ ] Network monitoring
 
-### Fase 3: Autonomy (Semana 5-6)
-- [ ] Feedback loop implementado
+### Phase 3: Autonomy (Week 5-6)
+- [ ] Feedback loop implemented
 - [ ] Self-correction
 - [ ] Multi-step task execution
 
-### Fase 4: Optimization (Semana 7-8)
+### Phase 4: Optimization (Week 7-8)
 - [ ] Fine-tune adapter
 - [ ] Performance optimization
 - [ ] Edge deployment (browser extension)
 
 ---
 
-## 8. REFERENCIAS
+## 8. REFERENCES
 
 - CDP Protocol: https://chromedevtools.github.io/devtools-protocol/
 - LFM Models: https://liquid.ai/
